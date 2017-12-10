@@ -18,7 +18,7 @@ app.get('*', function(request, response) {
   response.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'));
 });
 
-app.listen(PORT, function () {
+const server = app.listen(PORT, function () {
   console.log(`Listening on port ${PORT}`);
 });
 const io = require('socket.io')(server);

@@ -34,7 +34,7 @@ class Code extends Component {
     socket.emit('room', {
       room: 1
     });
-    this.setState({ users: users})
+    // this.setState({ users: users})
   }
   componentWillUnmount() {
     socket.emit('leave room', {
